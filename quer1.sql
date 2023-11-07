@@ -1,0 +1,1 @@
+SELECT diary_book_moves.id, diary_book.date, acounts.description, diary_book_moves.type, diary_book_moves.amount FROM ((diary_book_moves INNER JOIN acounts ON diary_book_moves.id_acount = acounts.id) INNER JOIN diary_book ON diary_book_moves.id_transaction = diary_book.id)
